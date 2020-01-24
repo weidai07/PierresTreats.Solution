@@ -1,0 +1,33 @@
+@{
+  Layout = "_Layout";
+}
+@using ToDoList.Models;
+@model ToDoList.Models.Treat;
+
+<h2>Treat Details</h2>
+
+<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)</h3>
+
+
+@if (@Model.Flavors.Count == 0)
+{
+  <p>no flavors found</p>
+} 
+
+
+<ol>
+  @foreach (Flavor flavor in @Model.Flavors)
+  {
+    
+      <li>@flavor.Description</li>
+    
+  } 
+</ol> 
+
+
+
+
+<p>@Html.ActionLink("Add new flavor", "Create", "Flavors")</p>
+<p>@Html.ActionLink("Back to treats", "Index")</p>
+<p>@Html.ActionLink("Edit Treat", "Edit", new { id = Model.TreatId })</p>
+<p>@Html.ActionLink("Delete Treat", "Delete", new { id = Model.TreatId })</p>
