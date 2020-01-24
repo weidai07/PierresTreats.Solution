@@ -1,8 +1,8 @@
 @{
   Layout = "_Layout";
 }
-@using ToDoList.Models;
-@model ToDoList.Models.Treat;
+@using TreatsList.Models;
+@model TreatsList.Models.Treat;
 
 <h2>Treat Details</h2>
 
@@ -11,7 +11,7 @@
 
 @if (@Model.Flavors.Count == 0)
 {
-  <p>no flavors found</p>
+  <p>No Flavors Found</p>
 } 
 
 
@@ -24,10 +24,7 @@
   } 
 </ol> 
 
-
-
-
-<p>@Html.ActionLink("Add new flavor", "Create", "Flavors")</p>
-<p>@Html.ActionLink("Back to treats", "Index")</p>
+<p>@Html.ActionLink("Add New Flavor", "Create", "Flavors")</p>
+<p>@Html.ActionLink("Back to Treats", "Index")</p>
 <p>@Html.ActionLink("Edit Treat", "Edit", new { id = Model.TreatId })</p>
 <p>@Html.ActionLink("Delete Treat", "Delete", new { id = Model.TreatId })</p>

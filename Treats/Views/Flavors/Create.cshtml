@@ -2,22 +2,22 @@
   Layout = "_Layout";
 }
 
-@model ToDoList.Models.Flavor
+@model TreatsList.Models.Flavor
 
-<h4>Add a new task</h4>
+<h4>Add a New Task</h4>
 
 @using (Html.BeginForm())
 {
    
-    @Html.LabelFor(model => model.Description)  // Display's the property name
-    @Html.TextBoxFor(model => model.Description) // Creates input field 
+    @Html.LabelFor(model => model.Description)  
+    @Html.TextBoxFor(model => model.Description) 
 
     @Html.LabelFor(model => model.Treat)
     @Html.DropDownList("TreatId")
 
-    <input type="submit" value="Add new flavor" class="btn btn-default" />
+    <input type="submit" value="Add New Flavor" class="btn btn-default" />
 }
-<p>@Html.ActionLink("Show all flavors", "Index")</p>
+<p>@Html.ActionLink("Show All Flavors", "Index")</p>
 
 
 

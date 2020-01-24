@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ToDoList.Models
+namespace TreatsList.Models
 {
-  public class ToDoListContext : DbContext
+  public class TreatsListContext : DbContext
   {
     public virtual DbSet<Treat> Treats { get; set; }
-    public virtual DbSet<Flavor> Flavors { get; set; }   // virtual here?
+    public virtual DbSet<Flavor> Flavors { get; set; }  
     
-    public ToDoListContext(DbContextOptions options) : base(options) { }
+    public TreatsListContext(DbContextOptions options) : base(options) { }
   }
 }

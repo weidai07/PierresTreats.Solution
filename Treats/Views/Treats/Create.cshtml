@@ -2,13 +2,13 @@
   Layout = "_Layout";
 }
 
-@model ToDoList.Models.Treat
+@model TreatsList.Models.Treat
 
-<h4>Add a new treat</h4>
+<h4>Add a New Treat</h4>
 @using (Html.BeginForm())
 {
     @Html.LabelFor(model => model.Name)
     @Html.TextBoxFor(model => model.Name)
-    <input type="submit" value="Add new treat" />
+    <input type="submit" value="Add New Treat" />
 }
-<p>@Html.ActionLink("Show all treats", "Index")</p>
+<p>@Html.ActionLink("Show All Treats", "Index")</p>

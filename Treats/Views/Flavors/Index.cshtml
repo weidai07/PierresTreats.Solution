@@ -2,14 +2,14 @@
   Layout = "_Layout";
 }
 
-@using ToDoList.Models;
-@model List<ToDoList.Models.Flavor>;
+@using TreatsList.Models;
+@model List<TreatsList.Models.Flavor>;
 
 <h1>Flavors</h1>
 
 @if (@Model.Count == 0)
 {
-  <h3>No flavors have been added yet!</h3>
+  <h3>No Flavors Have Been Added Yet!</h3>
 }
 
 @foreach (Flavor flavor in @Model)
@@ -17,29 +17,8 @@
   <li>@Html.ActionLink($"{flavor.Description}", "Details", new { id = flavor.FlavorId }) | @flavor.Treat.Name</li>
 }
 
-<p>@Html.ActionLink("Add new flavor", "Create")</p>
-<p>@Html.ActionLink("Add new treat", "Create", "Treats")</p>
+<p>@Html.ActionLink("Add New Flavor", "Create")</p>
+<p>@Html.ActionLink("Add New Treat", "Create", "Treats")</p>
 <p>@Html.ActionLink("Home", "Index", "Home")</p>
 
 
-
-
-
-
-@* public ActionResult Index()
-{
-  List<Flavor> model = _db.Flavors.Include(flavors => flavors.Treat).ToList();
-  return View(model);
-}
-
-
-namespace ToDoList.Models
-{
-  public class Flavor
-  {
-    public int FlavorId { get; set; }
-    public string Description { get; set; }
-    public int TreatId { get; set; }
-    public virtual Treat Treat { get; set; }
-  }
-} *@

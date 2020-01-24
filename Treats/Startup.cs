@@ -5,9 +5,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using ToDoList.Models;  // This enables passing in the ToDoListContext model 
+using TreatsList.Models;  
 
-namespace ToDoList
+namespace TreatsList
 {
   public class Startup
   {
@@ -15,7 +15,7 @@ namespace ToDoList
     {
       var builder = new ConfigurationBuilder()
           .SetBasePath(env.ContentRootPath)
-          .AddJsonFile("appsettings.json");  // Connection string in this file
+          .AddJsonFile("appsettings.json");  
       Configuration = builder.Build();
     }
 
@@ -26,7 +26,7 @@ namespace ToDoList
       services.AddMvc();
 
       services.AddEntityFrameworkMySql()
-        .AddDbContext<ToDoListContext>(options => options
+        .AddDbContext<TreatsListContext>(options => options
         .UseMySql(Configuration["ConnectionStrings:DefaultConnection"]));
     }
 

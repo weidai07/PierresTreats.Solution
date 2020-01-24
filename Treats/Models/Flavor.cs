@@ -1,4 +1,4 @@
-namespace ToDoList.Models
+namespace TreatsList.Models
 {
   public class Flavor
   {

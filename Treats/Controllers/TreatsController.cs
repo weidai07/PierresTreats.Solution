@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using TreatsList.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace ToDoList.Controllers
+namespace TreatsList.Controllers
 {
   public class TreatsController : Controller
   {
-    private readonly ToDoListContext _db;
+    private readonly TreatsListContext _db;
 
-    public TreatsController(ToDoListContext db)
+    public TreatsController(TreatsListContext db)
     {
       _db = db;
     }

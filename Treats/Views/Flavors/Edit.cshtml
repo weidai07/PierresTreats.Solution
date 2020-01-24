@@ -2,11 +2,11 @@
   Layout = "_Layout";
 }
 
-@model ToDoList.Models.Flavor
+@model TreatsList.Models.Flavor
 
 <h2>Edit</h2>
 
-<h4>Edit this task: @Html.DisplayFor(model => model.Description)</h4>
+<h4>Edit This Task: @Html.DisplayFor(model => model.Description)</h4>
 
 @using (Html.BeginForm())
 {
@@ -21,4 +21,4 @@
     <input type="submit" value="Save" />
 }
 
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Back to List", "Index")</p>
