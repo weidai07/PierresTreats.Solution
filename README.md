@@ -4,15 +4,15 @@
 
 ## Description
 
-This project allows Pierre 
+This project is a demostration of my database knowledge in C#. 
 
 ## Links:
 
-Github - https://github.com/weidai07/vendors
+Github - https://github.com/weidai07/PierresTreats.Solution 
 
 ## Setup/Installation Requirements:
 
-1. Open https://github.com/weidai07/vendors
+1. Open https://github.com/weidai07/PierresTreats.Solution 
 2. Clone repository to local machine 
 3. Build and Run project
 
@@ -23,7 +23,7 @@ Github - https://github.com/weidai07/vendors
 
 ### Specification
 
-This program is designed to 
+This program is designed to allow Pierre to market his treats and flavors. Users to this program are asked to create a log in authentication in order to be on file. From that point on, they can add the different flavors of treats they like to the list under their specific accounts. 
 
 ## Known Bugs
 
@@ -34,6 +34,8 @@ This program is designed to
 * C#
 * .NET
 * Microsoft(MS) Test
+* SQL
+* LINQ 
 
 ### License:
 
