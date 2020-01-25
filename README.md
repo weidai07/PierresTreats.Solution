@@ -25,8 +25,6 @@ Github - https://github.com/weidai07/PierresTreats.Solution
 
 This program is designed to allow Pierre to market his treats and flavors. Users to this program are asked to create a log in authentication in order to be on file. From that point on, they can add the different flavors of treats they like to the list under their specific accounts. 
 
-### SQL Table 
-
 ## Known Bugs
 
 * _None at this time_
